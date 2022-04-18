@@ -15,7 +15,7 @@ user can access exercise history
 user can click on different yoga poses for further information and instruction
 
 # Stretch Goals
-user can access local weather / planetary information relative to their current location inside the app
+user can use location services inside the app
 
 # ERD
 https://www.dropbox.com/s/ky90tgztd4907l4/Lunar-Yoga-ERD.png?dl=0
