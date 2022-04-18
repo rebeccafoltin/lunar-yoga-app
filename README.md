@@ -14,3 +14,5 @@ user can click on different yoga poses for further information and instruction
 
 # ERD
 https://www.dropbox.com/s/ky90tgztd4907l4/Lunar-Yoga-ERD.png?dl=0
+
+![Lunar-Yoga-ERD](https://user-images.githubusercontent.com/97457543/163888562-f4ffc153-d593-41a2-b729-27c723a9f849.png)
