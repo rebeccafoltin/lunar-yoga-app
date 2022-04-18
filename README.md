@@ -19,6 +19,3 @@ user can access local weather / planetary information relative to their current 
 
 # ERD
 https://www.dropbox.com/s/ky90tgztd4907l4/Lunar-Yoga-ERD.png?dl=0
-
-
-# Important Links
