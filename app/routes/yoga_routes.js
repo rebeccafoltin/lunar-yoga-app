@@ -17,7 +17,7 @@ const router = express.Router()
 
 // create yoga: POST
 router.yoga('/yoga', requireToken), (req, res, next) => {
-  const yoga = req.body.plant
+  const yoga = req.body.yoga
   yoga.yogi = req.user.id
 
   yoga.create(yoga)
