@@ -1,20 +1,24 @@
 const mongoose = require('mongoose')
 
 const yogaSchema = new mongoose.Schema({
-    Style: {
+    yogaName: {
+            type: String,
+            required: true
+    },
+    yogaStyle: {
         type: String,
-        ObjectId,
+        // enum: ['hatha', 'yin', 'bikram'],
         required: true
     },
-    Emotion: {
+    yogaEmotion: {
         type: String,
         required: true
     }, 
-    Date: {
+    yogaDate: {
         type: Date,
         required: true
     },
-    Yogi: {
+    yogaYogi: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'User',
         required: true
@@ -23,4 +27,4 @@ const yogaSchema = new mongoose.Schema({
     timestamps: true
 })
 
-module.exports = mongoose.model('yoga', yogaSchema)
+module.exports = mongoose.model('Yoga', yogaSchema)
