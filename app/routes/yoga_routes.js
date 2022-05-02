@@ -58,8 +58,9 @@ router.get('/yogas/:id', requireToken, (req, res, next) => {
 
 // CREATE
 // POST /yogas
+// beer data saved in POST / events
 router.post('/yogas', requireToken, (req, res, next) => {
-  // set owner of new example to be current user
+  // set owner of new yoga to be current user (yogi)
   req.body.example.owner = req.user.id
 
   Yoga.create(req.body.yoga)
