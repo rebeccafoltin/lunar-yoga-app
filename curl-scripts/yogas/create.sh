@@ -1,7 +1,7 @@
 #!/bin/bash
 
 API="http://localhost:4741"
-URL_PATH="/Yoga Journey"
+URL_PATH="/yogas"
 
 curl "${API}${URL_PATH}" \
   --include \
