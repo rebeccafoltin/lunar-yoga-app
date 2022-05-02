@@ -1,7 +1,12 @@
-const { Schema } = require('mongoose')
 const mongoose = require('mongoose')
 
 const userSchema = new mongoose.Schema({
+  email: {
+    type: String,
+    required: true,
+    unique: true,
+    trim: true
+  },
   firstname: {
     type: String,
     required: true,
@@ -14,18 +19,13 @@ const userSchema = new mongoose.Schema({
     maxlength: 30,
     trim: true
   },
-  email: {
-    type: String,
-    required: true,
-    unique: true,
-    trim: true
-  },
   hashedPassword: {
     type: String,
     required: true
   },
   token: String
-}, {timestamps: true,
+}, {
+  timestamps: true,
   toObject: {
     // remove `hashedPassword` field when we call `.toObject`
     transform: (_doc, user) => {

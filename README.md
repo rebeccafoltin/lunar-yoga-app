@@ -7,13 +7,17 @@ user can sign up
 user can sign in
 user can change password
 user can sign out
+user can create a resource
+user can update a resource
+user can delete a resource
+user can view single or multiple resource(s)
 
-stretch goals
-user can navigate to homepage
-user can access exercise history
-user can click on yoga poses for details
+# Stretch Goals
+navbar with homepage, aboutme, and moon cycle infopage
 
 # ERD
 https://www.dropbox.com/s/ky90tgztd4907l4/Lunar-Yoga-ERD.png?dl=0
 
 ![Lunar-Yoga-ERD](https://user-images.githubusercontent.com/97457543/163888562-f4ffc153-d593-41a2-b729-27c723a9f849.png)
+
+# Deployed Application: 
