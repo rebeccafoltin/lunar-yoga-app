@@ -2,6 +2,9 @@
 
 API="http://localhost:4741"
 URL_PATH="/sign-in"
+EMAIL="curlycurl@curl.com"
+PASSWORD="ihatecurl"
+
 
 curl "${API}${URL_PATH}" \
   --include \

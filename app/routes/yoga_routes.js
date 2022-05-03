@@ -60,7 +60,7 @@ router.get('/yogas/:id', requireToken, (req, res, next) => {
 // beer data saved in POST / events
 router.post('/yogas', requireToken, (req, res, next) => {
   // set owner of new yoga to be current user (yogi)
-  req.body.example.owner = req.user.id
+  req.body.yoga.yogaYogi = req.user.id
 
   Yoga.create(req.body.yoga)
     // respond to succesful `create` with status 201 and JSON of new "example"
@@ -75,10 +75,10 @@ router.post('/yogas', requireToken, (req, res, next) => {
 
 // UPDATE
 // PATCH /examples/5a7db6c74d55bc51bdf39793
-router.patch('/examples/:id', requireToken, removeBlanks, (req, res, next) => {
+router.patch('/yogas/:id', requireToken, removeBlanks, (req, res, next) => {
   // if the client attempts to change the `owner` property by including a new
   // owner, prevent that by deleting that key/value pair
-  delete req.body.yoga.owner
+  delete req.body.yoga.yogaYogi
 
   Yoga.findById(req.params.id)
     .then(handle404)
