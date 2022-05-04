@@ -30,7 +30,8 @@ const router = express.Router()
 // INDEX
 // GET /yogas
 router.get('/yogas', requireToken, (req, res, next) => {
-  Yoga.find()
+  Yoga.find({yogaYogi: req.user.id})
+  // only returns yoga on Yogi's account
     .then(yogas => {
       // `examples` will be an array of Mongoose documents
       // we want to convert each one to a POJO, so we use `.map` to
